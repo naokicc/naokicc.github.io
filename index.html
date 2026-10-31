@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Website</title>
+<meta name="description" content="A personal space for research, publications, and notes. Content coming soon.">
+<meta name="color-scheme" content="light dark">
+<style>
+:root{color-scheme:light dark;--paper:#faf9f6;--ink:#24312e;--muted:#626d67;--line:#dcded7;--accent:#286451}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:2rem}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.wrap{width:min(100% - 3rem,840px);margin-inline:auto}
+a{color:var(--accent);text-underline-offset:.25em}a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:5px;border-radius:2px}
+.skip{position:absolute;top:-5rem;left:1rem;padding:.5rem 1rem;background:var(--paper)}.skip:focus{top:1rem}
+header{padding-block:2rem;border-bottom:1px solid var(--line)}
+nav{display:flex;flex-wrap:wrap;gap:.75rem 1.8rem;font-size:.9rem}nav a{color:var(--ink);text-decoration:none}
+.intro{padding-block:5rem 4rem}.eyebrow{margin:0 0 1rem;color:var(--accent);font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:650}
+h1{margin:0;font:400 clamp(2.6rem,7vw,4.3rem)/1.12 Georgia,"Times New Roman",serif;letter-spacing:-.035em}
+.intro p:last-child{max-width:35rem;margin:1.5rem 0 0;color:var(--muted);font-size:1.1rem}
+section{display:grid;grid-template-columns:11rem 1fr;gap:2rem;padding-block:2.4rem;border-top:1px solid var(--line)}
+h2{margin:0;font:400 1.6rem/1.35 Georgia,"Times New Roman",serif}section p{margin:0;color:var(--muted)}
+footer{padding-block:3rem 2rem;color:var(--muted);font-size:.8rem}
+@media(max-width:580px){.intro{padding-block:3.5rem}section{grid-template-columns:1fr;gap:.8rem;padding-block:2rem}nav{gap:.65rem 1.2rem}}
+@media(prefers-color-scheme:dark){:root{--paper:#19211e;--ink:#edf0e9;--muted:#b4bfb6;--line:#3a4740;--accent:#a6d4ba}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap"><nav aria-label="Main navigation">
+<a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#notes">Notes</a>
+</nav></header>
+<main id="main" class="wrap">
+<div class="intro"><p class="eyebrow">A space for ideas</p><h1>Personal Website</h1><p>A home for research, writing, and things worth exploring.</p></div>
+<!-- Edit the text in each section to update the website. -->
+<section id="about" aria-labelledby="about-title"><h2 id="about-title">About</h2><p>A short introduction will appear here. This space is ready for a few words about interests and work.</p></section>
+<section id="research" aria-labelledby="research-title"><h2 id="research-title">Research</h2><p>Research interests and selected projects will be added here.</p></section>
+<section id="publications" aria-labelledby="publications-title"><h2 id="publications-title">Publications</h2><p>A list of publications and related links will be added here.</p></section>
+<section id="notes" aria-labelledby="notes-title"><h2 id="notes-title">Notes</h2><p>Short notes, reading reflections, and updates will appear here.</p></section>
+</main>
+<footer class="wrap">Personal Website</footer>
+</body>
+</html>
